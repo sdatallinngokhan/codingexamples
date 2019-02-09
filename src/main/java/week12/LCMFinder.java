@@ -9,7 +9,7 @@ public class LCMFinder {
             if (isPrime(j)) {
                 for (int k = 0; k < arr.length; k++) { // is used to check whether an element of array can be divided by that step's prime number
                     if (arr[k] % j == 0) {
-                        LCM *= j;
+                        LCM = LCM * j;
                         for (int t = 0; t < arr.length; t++) { // is used if an element of array can be divided by the prime, then divide it
                             if (arr[t] % j == 0) {
                                 arr[t] = arr[t] / j;
