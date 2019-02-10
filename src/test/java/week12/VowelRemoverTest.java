@@ -34,4 +34,18 @@ public class VowelRemoverTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldHandleCapitalLetters(){
+        // given
+        VowelRemover vowelRemover = new VowelRemover();
+        String input = "HOLLYWOOD";
+        String expected = "HLLYWD";
+
+        // when
+        String actual = vowelRemover.removeVowels(input);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
 }

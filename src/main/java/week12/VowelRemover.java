@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class VowelRemover {
 
     public String removeVowels(String input){
-        String result = input.replaceAll("[a,e,i,o,u]", "");
+        String result = input.replaceAll("[a,e,i,o,u,A,E,I,O,U]", "");
         return result;
     }
 
